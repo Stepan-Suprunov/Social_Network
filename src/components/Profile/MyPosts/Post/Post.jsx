@@ -1,13 +1,13 @@
 import classes from "./Post.module.css";
 
-const Post = () => {
+const Post = (props) => {
     return (
         <div className={classes.item}>
             <img
                 src='https://w7.pngwing.com/pngs/862/646/png-transparent-beard-hipster-male-man-avatars-xmas-giveaway-icon-thumbnail.png'/>
-            post 1
+            {props.message}
             <div>
-                <span>Like</span>
+                <span>Like {props.likes}</span>
             </div>
         </div>
     );
