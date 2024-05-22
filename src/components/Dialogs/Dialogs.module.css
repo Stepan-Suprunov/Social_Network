@@ -7,6 +7,25 @@
     padding: 10px;
 }
 
-.dialog a:focus {
-    color: gold;
+.nonactive {
+    color: white;
+    text-decoration: none;
 }
+
+.active {
+    color: gold;
+    text-decoration: none;
+}
+
+.dialog {
+    padding-bottom: 10px;
+}
+
+.dialog a:hover {
+    color: gray;
+    transition: color .2s ease;
+}
+
+/*.dialog a:focus {*/
+/*    color: gold;*/
+/*}*/

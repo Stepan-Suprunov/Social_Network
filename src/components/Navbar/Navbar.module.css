@@ -7,11 +7,16 @@
 }
 
 .item {
-    padding: 10px;
+    padding-bottom: 10px;
 }
 
-.item a {
+.nonactive {
     color: white;
+    text-decoration: none;
+}
+
+.active {
+    color: gold;
     text-decoration: none;
 }
 
@@ -20,6 +25,3 @@
     transition: color .2s ease;
 }
 
-.item a:focus {
-    color: gold;
-}
