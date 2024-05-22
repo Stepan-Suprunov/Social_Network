@@ -1,0 +1,31 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.dialogsItems, .messages {
+    padding: 10px;
+}
+
+.nonactive {
+    color: white;
+    text-decoration: none;
+}
+
+.active {
+    color: gold;
+    text-decoration: none;
+}
+
+.dialog {
+    padding-bottom: 10px;
+}
+
+.dialog a:hover {
+    color: gray;
+    transition: color .2s ease;
+}
+
+/*.dialog a:focus {*/
+/*    color: gold;*/
+/*}*/
