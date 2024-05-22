@@ -1,12 +1,25 @@
 .nav {
     grid-area: n;
     background-color: burlywood;
+    padding: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .item {
-    color: white;
+    padding: 10px;
 }
 
-.item.active {
+.item a {
+    color: white;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: gray;
+    transition: color .2s ease;
+}
+
+.item a:focus {
     color: gold;
 }
