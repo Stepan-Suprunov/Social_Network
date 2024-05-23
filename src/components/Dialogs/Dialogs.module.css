@@ -26,6 +26,10 @@
     transition: color .2s ease;
 }
 
+.messages {
+    color: white;
+}
+
 /*.dialog a:focus {*/
 /*    color: gold;*/
 /*}*/
