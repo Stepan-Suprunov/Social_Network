@@ -10,3 +10,7 @@
 .messages {
     color: white;
 }
+
+textarea {
+    margin-top: 20px;
+}
