@@ -28,7 +28,7 @@ let store = {
         return this._state;
     },
 
-    rerenderEntireTree () {},
+    _callSubscriber () {},
 
     addPost () {
         let newPost = {
@@ -38,12 +38,12 @@ let store = {
         };
         this._state.profilePage.posts.push(newPost);
         this._state.profilePage.newPostText = '';
-        this.rerenderEntireTree(this._state);
+        this._callSubscriber(this._state);
     },
 
     updateNewPostText (newPostText) {
         this._state.profilePage.newPostText = newPostText;
-        this.rerenderEntireTree(this._state);
+        this._callSubscriber(this._state);
     },
 
     addMessage () {
@@ -53,16 +53,16 @@ let store = {
         };
         this._state.messagesPage.messages.push(newMessage);
         this._state.messagesPage.newMessageText = '';
-        this.rerenderEntireTree(this._state);
+        this._callSubscriber(this._state);
     },
 
     updateNewMessageText (newMessageText) {
         this._state.messagesPage.newMessageText = newMessageText;
-        this.rerenderEStorentireTree(this._state);
+        this._callSubscriber(this._state);
     },
 
     subscribe (observer)  {
-        this.rerenderEntireTree = observer;
+        this._callSubscriber = observer;
     }
 };
 
