@@ -3,11 +3,11 @@ import {profileReducer} from "./profileReducer";
 import {messageReducer} from "./messageReducer";
 import {configureStore} from "@reduxjs/toolkit";
 
-const reducer = combineReducers({
+const reducers = combineReducers({
     profilePage: profileReducer,
     messagesPage: messageReducer
 });
 
-const store = configureStore({reducer});
+const store = configureStore({reducer: reducers});
 
 export default store;
