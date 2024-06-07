@@ -9,8 +9,6 @@ let initialState = {
     newPostText: ''
 };
 
-//let newStore = structuredClone(store);
-
 export const profileReducer = (state = initialState, action) => {
 
     switch (action.type) {
