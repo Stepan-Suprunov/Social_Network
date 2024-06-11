@@ -1,4 +1,5 @@
 import classes from "./UserItem.module.css";
+import userPhotoDefault from '../../../assets/images/user_avatar_default.png'
 
 const UserItem = (props) => {
 
@@ -10,7 +11,7 @@ const UserItem = (props) => {
             <span>
                 <div>
                     <img
-                        src={props.user.avatarUrl}
+                        src={props.user.photos.small != null ? props.user.photos.small : userPhotoDefault}
                         alt="Avatar"
                         className={classes.userAvatar}
                     />
@@ -22,12 +23,12 @@ const UserItem = (props) => {
                 </div>
             </span>
             <span>
-                <div>{props.user.fullName}</div>
+                <div>{props.user.name}</div>
                 <div>{props.user.status}</div>
             </span>
             <span>
-                <div>{props.user.location.city}</div>
-                <div>{props.user.location.country}</div>
+                <div>{'props.user.location.city'}</div>
+                <div>{'props.user.location.country'}</div>
             </span>
         </div>
     );
