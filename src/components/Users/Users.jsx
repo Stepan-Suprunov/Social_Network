@@ -1,6 +1,7 @@
 import classes from "./Users.module.css";
 import userPhotoDefault from "../../assets/images/user_avatar_default.png";
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 const Users = (props) => {
 
@@ -34,11 +35,13 @@ const Users = (props) => {
                 <div key={user.id}>
                         <span>
                             <div>
-                                <img
-                                    src={user.photos.small != null ? user.photos.small : userPhotoDefault}
-                                    alt="Avatar"
-                                    className={classes.userAvatar}
-                                />
+                                <NavLink to={'/profile/' + user.id}>
+                                    <img
+                                        src={user.photos.small != null ? user.photos.small : userPhotoDefault}
+                                        alt="Avatar"
+                                        className={classes.userAvatar}
+                                    />
+                                </NavLink>
                             </div>
                             <div>
                                 <button onClick={() => {
