@@ -1,7 +1,7 @@
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
 
-let initialState = {
+const initialState = {
     posts: [
         {id: 1, text: 'Hi! How are you?', likes: 15},
         {id: 2, text: 'It\'s my first message!', likes: 25}
